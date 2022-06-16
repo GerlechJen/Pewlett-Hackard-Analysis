@@ -35,11 +35,11 @@ The number of eligible retiring employees who can participate in Pewlett Hackard
  
 ## Summary 
 
-How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+1. How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
 As the "silver tsunami" begins to make an impact 72,458 roles will need to be filled.
 
-Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+2. Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
 
 No there are not enough qualified, retirement-ready employees to mentor the next generation of employees. The ratio of mentor to mentee obtained was 1:47 which is too high if we want a successful mentorship program. 
 
