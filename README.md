@@ -1,8 +1,8 @@
 # Pewlett Hackard Analysis
 ## Overview of the Analysis
-Pewlett Hackard, a large company with several thousand employees is seeing its staff begin to retire at a rapid rate.  The company wants to handle this by offering retirement package for those who meet certain criteria.The company would also want to know which positions will need to be filled soon as there will be thousands of job openings following the retirements. Pewlett Hackard wants to be future-proof and stay prepared for the many vacancies that will be created. Using SQL, an employee database was created from six CSV files to determine employees who will be retiring in the next few years, and, of those employees, which of them are eligible for a retirement package, as well as how many positions will need to be filled by Pewlett Hackard.
+Pewlett Hackard, a large company with several thousand employees is seeing its staff begin to retire at a rapid rate.  The company wants to handle this by offering retirement package for those who meet certain criteria.The company would also want to know which positions will need to be filled soon as there will be thousands of job openings following the retirements. Pewlett Hackard wants to be future-proof and stay prepared for the many vacancies that will be created. Using SQL, an employee database was created from six CSV files by applying data modeling, engineering and analysis skills. The number of employees who will be retiring in the next few years, and, of those employees, which of them are eligible for a retirement package, as well as how many positions will need to be filled by Pewlett Hackard were determined.
 
-The purpose of this further analysis in this project is to determine the number of retiring employees per title and identify employees who are eligible to participate in a mentorship program. An employee database will be built with SQL by applying data modeling, engineering and analysis skills.
+In this project, further analysis will be performed to determine the number of retiring employees per title and also identify employees who are eligible to participate in a mentorship program. A report will also be written to summarize the analysis so that the company will be well prepared for this silver-tsunami.
 
 ## Results 
 Using the code: 
@@ -20,7 +20,7 @@ The code above also generates 72,458 employees as the number of retiring employe
 
 * Out of the 300,024 total employees at Pewlett Hackard if 72,458 employees will be retiring, that represents 24.15% of total employees who will be retiring soon. 
 
-* As ssen from th etable above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. Thenumber of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
+* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. Thenumber of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
 
 * From the mentorship eligibility table above, using the code
 
