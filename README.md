@@ -20,23 +20,27 @@ The code above also generates 72,458 employees as the number of retiring employe
 
 * Out of the 300,024 total employees at Pewlett Hackard if 72,458 employees will be retiring, that represents 24.15% of total employees who will be retiring soon. 
 
-* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. Thenumber of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
+![image3](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retiring_titles.png)
 
-* From the mentorship eligibility table above, using the code
+* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. The number of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
+
+* The number of employees who are eligible for the mentorship programwas counted using the code below:
 
 ```SQL
 SELECT COUNT(emp_no)
 FROM mentorship_eligibility;
 ```
 
-the count of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. The number of retiring employees obtained earlier was 72,458. Therefore, the ratio of mentor to mentee is 1:47.
+The number of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. The number of retiring employees obtained earlier was 72,458. Therefore, the ratio of mentor to mentee is 1:47.
  
 ## Summary 
 
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
+
 As the "silver tsunami" begins to make an impact 72,458 roles will need to be filled.
 
 Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+
 No there are not enough qualified, retirement-ready employees to mentor the next generation of employees. The ratio of mentor to mentee obtained was 1:47 which is too high if we want a successful mentorship program. 
 
 Using the code below:
@@ -80,4 +84,4 @@ The table obtained is shown below:
 
 ![image2](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retirement_departments.png)
 
-recommendation- find the retiring people by departments.write teh querry and resulting table for that. 
+These two tables help us to have a clear picture of the number of employees likely to retire from each department and the number of mentors per department available to mentor new staff who fill in the vacancies.From these two tables we can find teh ratio of mentor to mentee bt department.
