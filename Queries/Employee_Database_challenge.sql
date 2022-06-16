@@ -44,9 +44,9 @@ FROM employees as e
 INNER JOIN dept_emp as de
 ON e.emp_no = de.emp_no
 INNER JOIN titles as t
-ON t.emp_no = t.emp_no
+ON t.emp_no = e.emp_no
 WHERE (de.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
-ORDER BY emp_no;
+ORDER BY e.emp_no;
 
 
