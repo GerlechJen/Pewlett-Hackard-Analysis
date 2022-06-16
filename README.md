@@ -1,6 +1,7 @@
 # Pewlett Hackard Analysis
 ## Overview of the Analysis
 Pewlett Hackard, a large company with several thousand employees is seeing its staff begin to retire at a rapid rate.  The company wants to handle this by offering retirement package for those who meet certain criteria and wants to know which positions will need to be filled soon as there will be thousands of job openings following the retirements. They want to future-proof the company and stay prepared for the many vacancies that will be created. Using SQL, an employee database was created from six CSV files to determine employees who will be retiring in the next few years, and, of those employees, who is eligible for a retirement package.    as well as how many positions will need to be filled by Pewlett Hackard.
+
 Continuing further with the task at hand, the number of retiring employees per title will be determined. Employees who are eligible to participate in a mentorship program will also be identified. 
 
 ## Results 
