@@ -18,11 +18,11 @@ FROM unique_titles;
 ```
 The code above also generates 72,458 employees as the number of retiring employees who were born between 1952 and 1955.
 
-* Out of the 300,024 total employees at Pewlett Hackard if 72,458 employees will be retiring, that represents 24.15% of total employees who will be retiring soon. 
+* Out of the 300,024 total employees at Pewlett Hackard 72,458 employees will be retiring. This represents 24.15% of total employees who will be retiring soon. 
 
 ![image3](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retiring_titles.png)
 
-* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. The number of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%. There were just 2 Managers who would be retiring soon.
+* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them fall under Senior Engineers and Senior Staffs. The number of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%. There were just 2 Managers who would be retiring soon.
 
 * The number of employees who are eligible for the mentorship program was counted using the code below:
 
@@ -31,9 +31,9 @@ SELECT COUNT(emp_no)
 FROM mentorship_eligibility;
 ```
 
-The number of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. The number of retiring employees obtained earlier was 72,458. Therefore, the ratio of mentor to mentee is 1:47.
+The number of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. 
 
-* Looking at the employees likely to retire soon based on department, the majority of the employees work in the Development Department, followed by Production, Sales, Customer Service, Research, Quality Management, Marketing, Human Resources and Finance Departments.
+* The number of retiring employees obtained earlier is 72,458 and the number of employees who are eligible for the mentorship program is 1,549. Therefore, the ratio of mentor to mentee is 1:47.
  
 ## Summary 
 
@@ -86,4 +86,5 @@ The retirement_departments table which shows the number of employees retiring fr
 
 ![image2](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retirement_departments.png)
 
-These two tables help us to have a clear picture of the number of employees likely to retire from each department and also the number of mentors available per department.From these two tables we can find the ratio of mentor to mentee by department.
+Looking at the employees likely to retire soon based on department, the majority of the employees work in the Development Department, followed by Production, Sales, Customer Service, Research, Quality Management, Marketing, Human Resources and Finance Departments.
+The retirement_departments and mentorship_departments tables help us to have a clear picture of the number of employees likely to retire from each department and also the number of mentors available per department.From these two tables we can find the ratio of mentor to mentee by for a specific department.
