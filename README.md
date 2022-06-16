@@ -22,9 +22,9 @@ The code above also generates 72,458 employees as the number of retiring employe
 
 ![image3](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retiring_titles.png)
 
-* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. The number of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
+* As seen from the table above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. The number of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%. There were just 2 Managers who would be retiring soon.
 
-* The number of employees who are eligible for the mentorship programwas counted using the code below:
+* The number of employees who are eligible for the mentorship program was counted using the code below:
 
 ```SQL
 SELECT COUNT(emp_no)
@@ -32,6 +32,8 @@ FROM mentorship_eligibility;
 ```
 
 The number of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. The number of retiring employees obtained earlier was 72,458. Therefore, the ratio of mentor to mentee is 1:47.
+
+* Looking at the employees likely to retire soon based on department, the majority of the employees work in the Development Department, followed by Production, Sales, Customer Service, Research, Quality Management, Marketing, Human Resources and Finance Departments.
  
 ## Summary 
 
@@ -84,4 +86,4 @@ The table obtained is shown below:
 
 ![image2](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retirement_departments.png)
 
-These two tables help us to have a clear picture of the number of employees likely to retire from each department and the number of mentors per department available to mentor new staff who fill in the vacancies.From these two tables we can find teh ratio of mentor to mentee bt department.
+These two tables help us to have a clear picture of the number of employees likely to retire from each department and the number of mentors per department available to mentor new staff who fill in the vacancies.From these two tables we can find teh ratio of mentor to mentee by department.
