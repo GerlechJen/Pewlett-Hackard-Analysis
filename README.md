@@ -23,13 +23,14 @@ The code above also generates 72,458 employees as the number of retiring employe
 * As ssen from th etable above, of the 72,458 employees likely to retire soon, about 70% of them are Senior Engineers and Senior Staff. Thenumber of Senior Engineers retiring soon is  25,916  which represents 35.77% and the number of Senior Staff retiring soon is 24,926 which represents 34.4%.
 
 * From the mentorship eligibility table above, using the code
+
 ```SQL
 SELECT COUNT(emp_no)
 FROM mentorship_eligibility;
 ```
 
 the count of eligible retiring employees who can participate in Pewlett Hackard’s mentorship program is 1,549 employees. The number of retiring employees obtained earlier was 72,458. Therefore, the ratio of mentor to mentee is 1:47.
-* 
+ 
 ## Summary 
 
 How many roles will need to be filled as the "silver tsunami" begins to make an impact?
@@ -39,6 +40,7 @@ Are there enough qualified, retirement-ready employees in the departments to men
 No there are not enough qualified, retirement-ready employees to mentor the next generation of employees. The ratio of mentor to mentee obtained was 1:47 which is too high if we want a successful mentorship program. 
 
 Using the code below:
+
 ```SQL
 SELECT COUNT(e.emp_no),
 	d.dept_name
@@ -53,10 +55,13 @@ AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 GROUP BY d.dept_name
 ORDER BY count DESC;
 ```
+
 a mentorship by department table was obtained. The table provides us with additional information on the number of mentors available per department for the mentorship program. 
+
 ![image1](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/mentorship_departments.png)
 
 Another table retirement_departments was created using the code below:
+
 ```SQL
 SELECT COUNT(e.emp_no),
 	d.dept_name
@@ -72,6 +77,7 @@ GROUP BY dept_name
 ORDER BY count DESC;
 ```
 The table obtained is shown below:
+
 ![image2](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retirement_departments.png)
 
 recommendation- find the retiring people by departments.write teh querry and resulting table for that. 
