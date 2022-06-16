@@ -49,4 +49,30 @@ WHERE (de.to_date = '9999-01-01')
 AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
 ORDER BY e.emp_no;
 
+-- creating mentorship_departments table
+SELECT COUNT(e.emp_no),
+	d.dept_name
+-- INTO mentorship_departments
+FROM employees as e
+INNER JOIN dept_emp as de
+ON e.emp_no = de.emp_no
+INNER JOIN departments as d
+ON d.dept_no = de.dept_no
+WHERE (de.to_date = '9999-01-01')
+AND (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31')
+GROUP BY d.dept_name
+ORDER BY count DESC;
 
+-- creating retirement_departments table 
+SELECT COUNT(e.emp_no),
+	d.dept_name
+-- INTO retirement_departments
+FROM employees as e
+INNER JOIN dept_emp as de
+ON e.emp_no = de.emp_no
+INNER JOIN departments as d
+ON d.dept_no = de.dept_no
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (to_date = '9999-01-01')
+GROUP BY dept_name
+ORDER BY count DESC;
