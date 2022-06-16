@@ -54,5 +54,24 @@ GROUP BY d.dept_name
 ORDER BY count DESC;
 ```
 a mentorship by department table was obtained. The table provides us with additional information on the number of mentors available per department for the mentorship program. 
+![image1](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/mentorship_departments.png)
+
+Another table retirement_departments was created using the code below:
+```SQL
+SELECT COUNT(e.emp_no),
+	d.dept_name
+INTO retirement_departments
+FROM employees as e
+INNER JOIN dept_emp as de
+ON e.emp_no = de.emp_no
+INNER JOIN departments as d
+ON d.dept_no = de.dept_no
+WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
+AND (to_date = '9999-01-01')
+GROUP BY dept_name
+ORDER BY count DESC;
+```
+The table obtained is shown below:
+![image2](https://github.com/GerlechJen/Pewlett-Hackard-Analysis/blob/main/IMAGES/retirement_departments.png)
 
 recommendation- find the retiring people by departments.write teh querry and resulting table for that. 
