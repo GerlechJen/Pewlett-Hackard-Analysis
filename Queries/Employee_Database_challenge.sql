@@ -39,7 +39,7 @@ SELECT DISTINCT ON(e.emp_no)e.emp_no,
 	de.from_date,
 	de.to_date,
 	t.title
--- INTO mentorship_eligibility
+INTO mentorship_eligibility
 FROM employees as e
 INNER JOIN dept_emp as de
 ON e.emp_no = de.emp_no
@@ -52,7 +52,7 @@ ORDER BY e.emp_no;
 -- creating mentorship_departments table
 SELECT COUNT(e.emp_no),
 	d.dept_name
--- INTO mentorship_departments
+INTO mentorship_departments
 FROM employees as e
 INNER JOIN dept_emp as de
 ON e.emp_no = de.emp_no
@@ -66,7 +66,7 @@ ORDER BY count DESC;
 -- creating retirement_departments table 
 SELECT COUNT(e.emp_no),
 	d.dept_name
--- INTO retirement_departments
+INTO retirement_departments
 FROM employees as e
 INNER JOIN dept_emp as de
 ON e.emp_no = de.emp_no
