@@ -88,3 +88,10 @@ The retirement_departments table which shows the number of employees retiring fr
 
 Looking at the employees likely to retire soon based on department, the majority of the employees work in the Development Department, followed by Production, Sales, Customer Service, Research, Quality Management, Marketing, Human Resources and Finance Departments.
 The retirement_departments and mentorship_departments tables help us to have a clear picture of the number of employees likely to retire from each department and also the number of mentors available per department. From these two tables we can find the ratio of mentor to mentee for a specific department.
+
+
+----
+
+**Completed by:** Jennifer Anno-Kusi
+
+**Email:** jannokusi@gmail.com 
